@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+dist/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Local persistent data & uploads
+data/
+*.webp
+*.jpg
+*.jpeg
+*.png
+!public/*.png
+!docs/**/*.png
+
+# Misc
+.DS_Store
+*.tsbuildinfo
+next-env.d.ts

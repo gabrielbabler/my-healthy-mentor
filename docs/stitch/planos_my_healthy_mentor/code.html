@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>My Healthy Mentor</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "outline-variant": "#3c4a42", "on-primary-container": "#00422b", "inverse-primary": "#006c49", "on-tertiary-container": "#523200", "secondary": "#89ceff", "on-primary-fixed-variant": "#005236", "primary-container": "#10b981", "surface-bright": "#36393f", "primary-fixed-dim": "#4edea3", "background": "#101419", "surface-tint": "#4edea3", "secondary-fixed-dim": "#89ceff", "on-primary-fixed": "#002113", "tertiary-fixed-dim": "#ffb95f", "surface-dim": "#101419", "error": "#ffb4ab", "error-container": "#93000a", "inverse-on-surface": "#2d3136", "surface": "#101419", "on-secondary-fixed": "#001e2f", "primary": "#4edea3", "on-surface-variant": "#bbcabf", "on-primary": "#003824", "on-tertiary-fixed": "#2a1700", "tertiary": "#ffb95f", "on-surface": "#e0e2ea", "surface-container-low": "#181c21", "tertiary-fixed": "#ffddb8", "on-tertiary": "#472a00", "on-secondary": "#00344d", "outline": "#86948a", "surface-variant": "#31353b", "on-error-container": "#ffdad6", "secondary-fixed": "#c9e6ff", "on-error": "#690005", "inverse-surface": "#e0e2ea", "surface-container-lowest": "#0a0e14", "on-secondary-container": "#00344e", "surface-container-highest": "#31353b", "tertiary-container": "#e29100", "primary-fixed": "#6ffbbe", "on-secondary-fixed-variant": "#004c6e", "surface-container": "#1c2025", "on-tertiary-fixed-variant": "#653e00", "surface-container-high": "#262a30", "on-background": "#e0e2ea", "secondary-container": "#00a2e6" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin": "1rem", "space-xs": "0.25rem", "margin-desktop": "2rem", "gutter-desktop": "1.5rem", "space-lg": "1rem", "space-md": "0.75rem", "gutter": "1rem", "space-xl": "1.5rem", "space-sm": "0.5rem" }, "fontFamily": { "body-md": ["Inter"], "headline-md": ["Inter"], "metric-value": ["Inter"], "label-md": ["Inter"], "metric-display": ["Inter"], "label-xs": ["Inter"], "headline-lg": ["Inter"], "body-lg": ["Inter"], "headline-xl": ["Inter"], "headline-xl-mobile": ["Inter"], "body-sm": ["Inter"] }, "fontSize": { "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "metric-value": ["18px", { "lineHeight": "22px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }], "metric-display": ["32px", { "lineHeight": "36px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "label-xs": ["10px", { "lineHeight": "12px", "letterSpacing": "0.05em", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.03em", "fontWeight": "700" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.025em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0em", "fontWeight": "400" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:calc(env(safe-area-inset-bottom,0px) + 5rem);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface antialiased flex flex-col min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 inset-x-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.35)] pt-safe"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="My Healthy Mentor Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/ALJJyrBW-m5CCr4-v6HY-BmYq9WM0u_7fog5LJA9LgbtHJ2exD509IxNsaaG3_F_D5zTciZGAWQSUZB2NRd1u_-4zhdUMIqgi9AoljTohW6Sl66st6pWydtjjEqdQsCphbIjKRR8OQSi3rgGaxxpnObaFu3UAnYMVMV9G-0jyrcGGDYRcPnxEGKsu5UcZBKc0C7PSEAYEcPV7jgU3_wCuVc0YxyWiGpafiDev7ybOo365aM"/><div class="flex flex-col min-w-0"><span class="text-body-md font-body-md text-on-surface truncate">My Healthy Mentor</span><span class="text-label-xs font-label-xs text-on-surface-variant truncate uppercase">Planos</span></div></div><div class="flex items-center gap-space-sm flex-shrink-0"><div class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-full bg-surface-container-high shadow-[0_0_0_1px_rgba(78,222,163,0.15)]"><span class="material-symbols-outlined text-primary text-[14px]">send</span><span class="text-label-xs font-label-xs text-primary hidden sm:inline-block">Telegram conectado</span><span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse sm:hidden"></span></div><button aria-label="Perfil do usuário" class="flex items-center justify-center p-0.5 rounded-full focus:outline-none min-w-[44px] min-h-[44px]"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIBC0RLw9i3h5-05bFDJWPRAfDbSV8HlHFjVFK1EP72ZSnVbksvHe1zYZrYqZRA5EEF2FzOS7KYVSpjRKC0yQSwmE7MiEKihKTJOwHpYVaAplfaZw8cfvt5tcY0DX32Oo1Sj7GbIbE68JGdwOR9XRXrsrQiWNml4gTRiPVkjGvzzF83feLJgN18bF_P6PvhnMQRqBVME5hAONLKOIjgdH6ueN3AwZGXrMmf4NFI4A"/></button></div></div></header><main class="flex-1 flex flex-col relative w-full px-margin pt-16 pb-safe bg-surface"><div class="flex flex-col w-full pb-8">
+<!-- Top Section: Header & Mode Controls -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-center justify-between">
+<div>
+<span class="text-label-xs font-label-xs uppercase tracking-wider text-outline">Prescrições Ativas</span>
+<h1 class="text-headline-md font-headline-md text-on-surface">Seus Planos Atuais</h1>
+</div>
+<div class="flex items-center gap-space-xs">
+<button aria-label="Histórico de Versões" class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors shadow-sm" id="btn-history" type="button">
+<span class="material-symbols-outlined text-[20px]">history</span>
+</button>
+</div>
+</div>
+<!-- Segmented Tab: Dieta vs Treino -->
+<div class="flex p-1 bg-surface-container-lowest rounded-xl shadow-inner">
+<button class="flex-1 flex items-center justify-center gap-space-xs py-2 px-3 rounded-lg bg-surface-container-high text-on-surface shadow-sm font-label-md text-label-md transition-all" id="tab-diet" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary" style="font-variation-settings: 'FILL' 1;">restaurant_menu</span>
+<span>Dieta</span>
+<span class="material-symbols-outlined text-[14px] text-primary">check_circle</span>
+</button>
+<button class="flex-1 flex items-center justify-center gap-space-xs py-2 px-3 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all" id="tab-workout" type="button">
+<span class="material-symbols-outlined text-[18px]">fitness_center</span>
+<span>Treino</span>
+</button>
+</div>
+<!-- Quick Action Bar -->
+<div class="grid grid-cols-2 gap-space-sm">
+<button class="flex items-center justify-center gap-space-xs h-11 px-space-md rounded-xl bg-surface-container text-on-surface text-label-md font-label-md shadow-sm active:scale-[0.98] transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">text_snippet</span>
+<span>Importar Texto</span>
+</button>
+<button class="flex items-center justify-center gap-space-xs h-11 px-space-md rounded-xl bg-primary text-on-primary font-label-md text-label-md shadow-sm active:scale-[0.98] transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<span>Gerar com IA</span>
+</button>
+</div>
+</div>
+<!-- AI Mentor Pending Diff Card -->
+<section class="mt-space-lg relative overflow-hidden rounded-xl bg-surface-container-low shadow-md" id="mentor-diff-card">
+<div class="absolute top-0 left-0 right-0 h-1 bg-tertiary"></div>
+<div class="p-space-lg flex flex-col gap-space-md">
+<!-- Badge & Status Header -->
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col gap-1">
+<div class="inline-flex items-center gap-space-xs px-2.5 py-0.5 rounded-full bg-tertiary/15 text-tertiary w-fit">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>
+<span class="text-label-xs font-label-xs uppercase">Proposta Pendente do Mentor</span>
+</div>
+<h2 class="text-headline-md font-headline-md text-on-surface mt-1">Ajuste de Déficit — Ciclo Semana 7</h2>
+</div>
+<span class="material-symbols-outlined text-tertiary text-[26px]">psychology_alt</span>
+</div>
+<!-- Diff Comparison Block -->
+<div class="grid grid-cols-2 gap-space-sm bg-surface-container-lowest p-space-md rounded-xl">
+<!-- Baseline Before -->
+<div class="flex flex-col gap-1 pr-space-xs">
+<div class="flex items-center gap-1">
+<span class="text-label-xs font-label-xs text-outline uppercase tracking-wider">Antes</span>
+<span class="material-symbols-outlined text-[12px] text-outline">history</span>
+</div>
+<span class="text-body-lg font-body-lg text-outline line-through">2.350 kcal</span>
+<div class="flex flex-wrap gap-x-1.5 gap-y-0.5 text-label-xs font-label-xs text-outline line-through">
+<span>170g P</span>
+<span>•</span>
+<span>260g C</span>
+<span>•</span>
+<span>70g G</span>
+</div>
+</div>
+<!-- Proposed After -->
+<div class="flex flex-col gap-1 pl-space-xs bg-primary/5 -m-space-md p-space-md rounded-r-xl">
+<div class="flex items-center justify-between">
+<span class="text-label-xs font-label-xs text-primary uppercase tracking-wider font-semibold">Proposta</span>
+<span class="text-label-xs font-label-xs bg-primary text-on-primary px-1 rounded">-200 kcal</span>
+</div>
+<span class="text-headline-md font-headline-md text-on-surface font-bold text-primary">2.150 kcal</span>
+<div class="flex flex-wrap gap-x-1.5 gap-y-0.5 text-label-xs font-label-xs text-on-surface-variant">
+<span class="text-primary font-semibold">175g P</span>
+<span>•</span>
+<span class="text-secondary font-semibold">210g C</span>
+<span>•</span>
+<span class="text-tertiary font-semibold">62g G</span>
+</div>
+</div>
+</div>
+<!-- Rationale Tag -->
+<div class="flex items-center gap-space-xs p-2.5 rounded-lg bg-surface-container text-on-surface-variant">
+<span class="material-symbols-outlined text-tertiary text-[18px] flex-shrink-0">info</span>
+<p class="text-body-sm font-body-sm leading-snug">
+<span class="text-on-surface font-semibold">Motivo:</span> Estagnação de peso nos últimos 10 dias detectada pelo check-in matinal.
+        </p>
+</div>
+<!-- Dual Action Decision CTA -->
+<div class="grid grid-cols-2 gap-space-sm pt-1">
+<button class="h-11 px-4 rounded-xl bg-surface-container text-on-surface font-label-md text-label-md active:bg-surface-variant transition-colors flex items-center justify-center" id="btn-reject-diff" type="button">
+          Rejeitar
+        </button>
+<button class="h-11 px-4 rounded-xl bg-primary text-on-primary font-label-md text-label-md shadow-sm active:opacity-90 transition-opacity flex items-center justify-center gap-1.5" id="btn-approve-diff" type="button">
+<span class="material-symbols-outlined text-[18px]">check</span>
+<span>Aprovar Ajuste</span>
+</button>
+</div>
+</div>
+</section>
+<!-- VIEW 1: DIETA SECTION CONTAINER -->
+<div class="flex flex-col gap-space-lg mt-space-lg" id="view-diet">
+<!-- Macro Summary Header Card -->
+<div class="rounded-xl bg-surface-container p-space-lg flex flex-col gap-space-md shadow-sm">
+<div class="flex items-center justify-between">
+<div>
+<span class="text-label-xs font-label-xs text-outline uppercase tracking-wider">Dashboard Metabólico</span>
+<h2 class="text-headline-md font-headline-md text-on-surface">Metas Diárias Totais</h2>
+</div>
+<div class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary/10 text-secondary text-label-xs font-label-xs">
+<span class="material-symbols-outlined text-[14px]">water_drop</span>
+<span>3,2 L Água</span>
+</div>
+</div>
+<!-- Big Metric + Macro Ratio Bar -->
+<div class="flex items-baseline justify-between pt-1">
+<div class="flex items-baseline gap-1.5">
+<span class="text-metric-display font-metric-display text-on-surface">2.150</span>
+<span class="text-body-md font-body-md text-on-surface-variant">kcal / dia</span>
+</div>
+<span class="text-label-xs font-label-xs text-primary px-2 py-0.5 rounded bg-primary/10">Déficit Moderado</span>
+</div>
+<!-- Multi-segment Macro Visual Bar -->
+<div class="w-full flex flex-col gap-1.5">
+<div class="h-2.5 w-full bg-surface-container-lowest rounded-full overflow-hidden flex">
+<div class="h-full bg-primary" style="width: 32%;" title="Proteína 32%"></div>
+<div class="h-full bg-secondary" style="width: 40%;" title="Carboidrato 40%"></div>
+<div class="h-full bg-tertiary" style="width: 28%;" title="Gordura 28%"></div>
+</div>
+<!-- Macro Breakdown Numbers -->
+<div class="grid grid-cols-3 gap-space-xs text-center pt-1">
+<div class="flex flex-col items-center bg-surface-container-low py-1.5 rounded-lg">
+<span class="text-label-xs font-label-xs text-primary font-semibold flex items-center gap-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary inline-block"></span> Proteína
+            </span>
+<span class="text-metric-value font-metric-value text-on-surface">175g</span>
+<span class="text-label-xs font-label-xs text-outline">32% (700 kcal)</span>
+</div>
+<div class="flex flex-col items-center bg-surface-container-low py-1.5 rounded-lg">
+<span class="text-label-xs font-label-xs text-secondary font-semibold flex items-center gap-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary inline-block"></span> Carboidrato
+            </span>
+<span class="text-metric-value font-metric-value text-on-surface">210g</span>
+<span class="text-label-xs font-label-xs text-outline">40% (840 kcal)</span>
+</div>
+<div class="flex flex-col items-center bg-surface-container-low py-1.5 rounded-lg">
+<span class="text-label-xs font-label-xs text-tertiary font-semibold flex items-center gap-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary inline-block"></span> Gordura
+            </span>
+<span class="text-metric-value font-metric-value text-on-surface">62g</span>
+<span class="text-label-xs font-label-xs text-outline">28% (558 kcal)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Meal Card List -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between px-1">
+<h3 class="text-body-md font-body-md font-semibold text-on-surface">Cronograma de Refeições (4)</h3>
+<span class="text-label-xs font-label-xs text-outline">100% Coberto</span>
+</div>
+<!-- Meal 1 -->
+<div class="rounded-xl bg-surface-container p-space-lg flex flex-col gap-space-sm shadow-sm transition-all">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">wb_twilight</span>
+</div>
+<div>
+<h4 class="text-body-md font-body-md font-semibold text-on-surface">Café da Manhã</h4>
+<span class="text-label-xs font-label-xs text-outline">07:30 • Alvo de Início</span>
+</div>
+</div>
+<div class="text-right">
+<span class="text-body-md font-body-md font-bold text-on-surface">450 kcal</span>
+<span class="block text-label-xs font-label-xs text-primary font-semibold">35g P</span>
+</div>
+</div>
+<!-- Food List -->
+<div class="rounded-lg bg-surface-container-lowest p-space-md flex flex-col gap-2">
+<div class="flex items-start justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>• 3 Ovos inteiros mexidos</span>
+<span class="text-outline">150g</span>
+</div>
+<div class="flex items-start justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>• 2 Fatias de pão 100% integral</span>
+<span class="text-outline">50g</span>
+</div>
+<div class="flex items-start justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>• 1 Banana prata</span>
+<span class="text-outline">80g</span>
+</div>
+<div class="flex items-start justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>• 1 Xícara de café puro</span>
+<span class="text-outline">Sem açúcar</span>
+</div>
+</div>
+<!-- Substitution Drawer Trigger -->
+<button class="flex items-center justify-between pt-1 text-label-xs font-label-xs text-secondary hover:underline cursor-pointer" onclick="toggleSub(1)" type="button">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">swap_horiz</span>
+<span>Ver substituições inteligentes (3 opções)</span>
+</span>
+<span class="material-symbols-outlined text-[16px] transition-transform" id="sub-arrow-1">expand_more</span>
+</button>
+<!-- Hidden Alternatives Content -->
+<div class="hidden mt-1 p-2.5 rounded-lg bg-surface-container-high flex flex-col gap-1.5 text-body-sm font-body-sm text-on-surface" id="sub-content-1">
+<span class="text-label-xs font-label-xs text-outline uppercase font-semibold">Alternativas Equivalentes</span>
+<p class="text-label-xs font-label-xs text-on-surface-variant">• 3 Ovos → 120g Queijo cottage 0% ou 130g Tofu firme grelhado.</p>
+<p class="text-label-xs font-label-xs text-on-surface-variant">• 2 Fatias de pão → 40g Aveia em flocos ou 130g Mandioca cozida.</p>
+<p class="text-label-xs font-label-xs text-on-surface-variant">• Banana → 140g Morangos frescos (menos calorias).</p>
+</div>
+</div>
+<!-- Meal 2 -->
+<div class="rounded-xl bg-surface-container p-space-lg flex flex-col gap-space-sm shadow-sm transition-all">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[20px]">sunny</span>
+</div>
+<div>
+<h4 class="text-body-md font-body-md font-semibold text-on-surface">Almoço</h4>
+<span class="text-label-xs font-label-xs text-outline">12:30 • Refeição Principal</span>
+</div>
+</div>
+<div class="text-right">
+<span class="text-body-md font-body-md font-bold text-on-surface">720 kcal</span>
+<span class="block text-label-xs font-label-xs text-primary font-semibold">55g P</span>
+</div>
+</div>
+<div class="rounded-lg bg-surface-container-lowest p-space-md flex flex-col gap-2">
+<div class="flex items-start justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>• Peito de frango grelhado</span>
+<span class="text-outline">180g</span>
+</div>
+<div class="flex items-start justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>• Arroz branco cozido</span>
+<span class="text-outline">160g</span>
+</div>
+<div class="flex items-start justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>• Feijão carioca cozido</span>
+<span class="text-outline">100g</span>
+</div>
+<div class="flex items-start justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>• Salada verde + Azeite de oliva</span>
+<span class="text-outline">à vontade + 8ml</span>
+</div>
+</div>
+<button class="flex items-center justify-between pt-1 text-label-xs font-label-xs text-secondary hover:underline cursor-pointer" onclick="toggleSub(2)" type="button">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">swap_horiz</span>
+<span>Ver substituições inteligentes (Patinho, Peixe branco, Mandioca)</span>
+</span>
+<span class="material-symbols-outlined text-[16px] transition-transform" id="sub-arrow-2">expand_more</span>
+</button>
+<div class="hidden mt-1 p-2.5 rounded-lg bg-surface-container-high flex flex-col gap-1.5 text-body-sm font-body-sm text-on-surface" id="sub-content-2">
+<span class="text-label-xs font-label-xs text-outline uppercase font-semibold">Proteína e Carbo Alternativos</span>
+<p class="text-label-xs font-label-xs text-on-surface-variant">• 180g Frango → 165g Patinho moído ou 210g Tilápia / Pescada.</p>
+<p class="text-label-xs font-label-xs text-on-surface-variant">• 160g Arroz → 220g Batata inglesa ou 150g Mandioca cozida.</p>
+</div>
+</div>
+<!-- Meal 3 -->
+<div class="rounded-xl bg-surface-container p-space-lg flex flex-col gap-space-sm shadow-sm transition-all">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+</div>
+<div>
+<h4 class="text-body-md font-body-md font-semibold text-on-surface">Lanche Pré-Treino</h4>
+<span class="text-label-xs font-label-xs text-outline">16:30 • Digestão Rápida</span>
+</div>
+</div>
+<div class="text-right">
+<span class="text-body-md font-body-md font-bold text-on-surface">380 kcal</span>
+<span class="block text-label-xs font-label-xs text-primary font-semibold">30g P</span>
+</div>
+</div>
+<div class="rounded-lg bg-surface-container-lowest p-space-md flex flex-col gap-2">
+<div class="flex items-start justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>• Whey Protein Isolado</span>
+<span class="text-outline">30g</span>
+</div>
+<div class="flex items-start justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>• Aveia em flocos finos</span>
+<span class="text-outline">40g</span>
+</div>
+<div class="flex items-start justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>• Maçã picada</span>
+<span class="text-outline">120g</span>
+</div>
+</div>
+</div>
+<!-- Meal 4 -->
+<div class="rounded-xl bg-surface-container p-space-lg flex flex-col gap-space-sm shadow-sm transition-all">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-fixed-dim">
+<span class="material-symbols-outlined text-[20px]">bedtime</span>
+</div>
+<div>
+<h4 class="text-body-md font-body-md font-semibold text-on-surface">Jantar</h4>
+<span class="text-label-xs font-label-xs text-outline">20:30 • Recuperação Noturna</span>
+</div>
+</div>
+<div class="text-right">
+<span class="text-body-md font-body-md font-bold text-on-surface">600 kcal</span>
+<span class="block text-label-xs font-label-xs text-primary font-semibold">45g P</span>
+</div>
+</div>
+<div class="rounded-lg bg-surface-container-lowest p-space-md flex flex-col gap-2">
+<div class="flex items-start justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>• Patinho bovino moído</span>
+<span class="text-outline">160g</span>
+</div>
+<div class="flex items-start justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>• Batata doce cozida ou airfryer</span>
+<span class="text-outline">200g</span>
+</div>
+<div class="flex items-start justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>• Brócolis e cenoura no vapor</span>
+<span class="text-outline">120g</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- VIEW 2: TREINO PREVIEW / SECTION CONTAINER -->
+<div class="hidden flex flex-col gap-space-lg mt-space-lg" id="view-workout">
+<!-- Workout Header & Split Info -->
+<div class="rounded-xl bg-surface-container p-space-lg flex flex-col gap-space-sm shadow-sm">
+<div class="flex items-center justify-between">
+<div>
+<span class="text-label-xs font-label-xs text-outline uppercase tracking-wider">Periodização Ativa</span>
+<h2 class="text-headline-md font-headline-md text-on-surface">Split Push • Pull • Legs</h2>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-primary/10 text-primary text-label-xs font-label-xs font-semibold">Semana 7/12</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+        Foco: Hipertrofia miofibrilar com progressão de sobrecarga semanal nos compostos.
+      </p>
+<!-- Horizontal Day Carousel -->
+<div class="pt-2 flex items-center justify-between gap-1 overflow-x-auto pb-1">
+<!-- Seg -->
+<button class="flex flex-col items-center justify-center min-w-[44px] py-2 px-1 rounded-xl bg-surface-container-low text-on-surface-variant hover:text-on-surface" type="button">
+<span class="text-label-xs font-label-xs">SEG</span>
+<span class="text-label-md font-label-md font-bold mt-1 text-on-surface">B</span>
+</button>
+<!-- Ter -->
+<button class="flex flex-col items-center justify-center min-w-[44px] py-2 px-1 rounded-xl bg-surface-container-low text-on-surface-variant hover:text-on-surface" type="button">
+<span class="text-label-xs font-label-xs">TER</span>
+<span class="text-label-md font-label-md font-bold mt-1 text-on-surface">C</span>
+</button>
+<!-- Qua (Off) -->
+<button class="flex flex-col items-center justify-center min-w-[44px] py-2 px-1 rounded-xl bg-surface-container-low/50 text-outline" type="button">
+<span class="text-label-xs font-label-xs">QUA</span>
+<span class="text-label-xs font-label-xs mt-1">Off</span>
+</button>
+<!-- Qui (Active today) -->
+<button class="flex flex-col items-center justify-center min-w-[44px] py-2 px-1 rounded-xl bg-primary text-on-primary font-bold shadow-sm" type="button">
+<span class="text-label-xs font-label-xs uppercase">QUI</span>
+<span class="text-headline-md font-headline-md leading-none mt-0.5">A</span>
+</button>
+<!-- Sex -->
+<button class="flex flex-col items-center justify-center min-w-[44px] py-2 px-1 rounded-xl bg-surface-container-low text-on-surface-variant hover:text-on-surface" type="button">
+<span class="text-label-xs font-label-xs">SEX</span>
+<span class="text-label-md font-label-md font-bold mt-1 text-on-surface">B</span>
+</button>
+<!-- Sab -->
+<button class="flex flex-col items-center justify-center min-w-[44px] py-2 px-1 rounded-xl bg-surface-container-low text-secondary" type="button">
+<span class="text-label-xs font-label-xs">SÁB</span>
+<span class="text-label-xs font-label-xs mt-1">Cardio</span>
+</button>
+<!-- Dom -->
+<button class="flex flex-col items-center justify-center min-w-[44px] py-2 px-1 rounded-xl bg-surface-container-low/50 text-outline" type="button">
+<span class="text-label-xs font-label-xs">DOM</span>
+<span class="text-label-xs font-label-xs mt-1">Off</span>
+</button>
+</div>
+</div>
+<!-- Active Routine Details -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between px-1">
+<h3 class="text-body-md font-body-md font-semibold text-on-surface">Sessão de Hoje: Treino A (Costas &amp; Bíceps)</h3>
+<span class="text-label-xs font-label-xs text-primary">6 Exercícios • ~55 min</span>
+</div>
+<!-- Exercise Highlight Card -->
+<div class="rounded-xl bg-surface-container p-space-lg flex flex-col gap-space-sm shadow-sm">
+<div class="flex items-start justify-between">
+<div class="flex items-start gap-space-sm">
+<span class="w-7 h-7 rounded-lg bg-primary/10 text-primary flex items-center justify-center font-bold text-label-xs font-label-xs">#1</span>
+<div>
+<h4 class="text-body-md font-body-md font-semibold text-on-surface">Puxada Alta Frontal</h4>
+<span class="text-label-xs font-label-xs text-outline">Pegada pronada aberta • Polia dupla</span>
+</div>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+<!-- Metrics Chips -->
+<div class="grid grid-cols-3 gap-space-xs pt-1">
+<div class="rounded-lg bg-surface-container-lowest p-2 flex flex-col items-center text-center">
+<span class="text-label-xs font-label-xs text-outline uppercase">Séries</span>
+<span class="text-metric-value font-metric-value text-on-surface">4 sets</span>
+</div>
+<div class="rounded-lg bg-surface-container-lowest p-2 flex flex-col items-center text-center">
+<span class="text-label-xs font-label-xs text-outline uppercase">Faixa Reps</span>
+<span class="text-metric-value font-metric-value text-on-surface">8 - 10</span>
+</div>
+<div class="rounded-lg bg-surface-container-lowest p-2 flex flex-col items-center text-center">
+<span class="text-label-xs font-label-xs text-outline uppercase">Descanso</span>
+<span class="text-metric-value font-metric-value text-secondary">90 seg</span>
+</div>
+</div>
+<!-- Mentor Technical Cue Note -->
+<div class="rounded-lg bg-primary/5 p-space-sm flex items-start gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-primary text-[18px] flex-shrink-0 mt-0.5">tips_and_updates</span>
+<p class="text-label-xs font-label-xs leading-relaxed text-on-surface-variant">
+<span class="font-semibold text-primary">Nota Técnica:</span> Foco absoluto em depressão e contração escapular com 2 segundos de pico isométrico no peito.
+          </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Notification Toast for Diff Action -->
+<div class="fixed bottom-24 left-4 right-4 max-w-sm mx-auto p-space-md rounded-xl bg-surface-container-high text-on-surface flex items-center justify-between shadow-xl opacity-0 pointer-events-none transition-all duration-300 z-50" id="toast-action">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]" id="toast-icon">check_circle</span>
+<span class="text-body-sm font-body-sm" id="toast-text">Plano atualizado com sucesso!</span>
+</div>
+<button class="text-outline hover:text-on-surface" onclick="hideToast()" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<script>
+  // Tab Switching Logic
+  const tabDiet = document.getElementById('tab-diet');
+  const tabWorkout = document.getElementById('tab-workout');
+  const viewDiet = document.getElementById('view-diet');
+  const viewWorkout = document.getElementById('view-workout');
+
+  tabDiet.addEventListener('click', () => {
+    tabDiet.className = "flex-1 flex items-center justify-center gap-space-xs py-2 px-3 rounded-lg bg-surface-container-high text-on-surface shadow-sm font-label-md text-label-md transition-all";
+    tabWorkout.className = "flex-1 flex items-center justify-center gap-space-xs py-2 px-3 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all";
+    viewDiet.classList.remove('hidden');
+    viewWorkout.classList.add('hidden');
+  });
+
+  tabWorkout.addEventListener('click', () => {
+    tabWorkout.className = "flex-1 flex items-center justify-center gap-space-xs py-2 px-3 rounded-lg bg-surface-container-high text-on-surface shadow-sm font-label-md text-label-md transition-all";
+    tabDiet.className = "flex-1 flex items-center justify-center gap-space-xs py-2 px-3 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all";
+    viewWorkout.classList.remove('hidden');
+    viewDiet.classList.add('hidden');
+  });
+
+  // Food Substitutions Toggle
+  function toggleSub(id) {
+    const content = document.getElementById('sub-content-' + id);
+    const arrow = document.getElementById('sub-arrow-' + id);
+    if (content.classList.contains('hidden')) {
+      content.classList.remove('hidden');
+      arrow.style.transform = 'rotate(180deg)';
+    } else {
+      content.classList.add('hidden');
+      arrow.style.transform = 'rotate(0deg)';
+    }
+  }
+
+  // Mentor Diff Actions
+  const diffCard = document.getElementById('mentor-diff-card');
+  const btnApprove = document.getElementById('btn-approve-diff');
+  const btnReject = document.getElementById('btn-reject-diff');
+  const toast = document.getElementById('toast-action');
+  const toastText = document.getElementById('toast-text');
+  const toastIcon = document.getElementById('toast-icon');
+
+  function showToast(message, isSuccess = true) {
+    toastText.innerText = message;
+    if (isSuccess) {
+      toastIcon.innerText = "check_circle";
+      toastIcon.className = "material-symbols-outlined text-primary text-[20px]";
+    } else {
+      toastIcon.innerText = "cancel";
+      toastIcon.className = "material-symbols-outlined text-error text-[20px]";
+    }
+    toast.classList.remove('opacity-0', 'pointer-events-none');
+    toast.classList.add('opacity-100');
+    setTimeout(() => {
+      hideToast();
+    }, 3500);
+  }
+
+  function hideToast() {
+    toast.classList.add('opacity-0', 'pointer-events-none');
+    toast.classList.remove('opacity-100');
+  }
+
+  btnApprove.addEventListener('click', () => {
+    diffCard.style.transition = 'all 0.3s ease';
+    diffCard.style.opacity = '0';
+    diffCard.style.transform = 'translateY(-8px)';
+    setTimeout(() => {
+      diffCard.remove();
+      showToast('Ajuste de 2.150 kcal aprovado e sincronizado!', true);
+    }, 300);
+  });
+
+  btnReject.addEventListener('click', () => {
+    diffCard.style.transition = 'all 0.3s ease';
+    diffCard.style.opacity = '0';
+    diffCard.style.transform = 'translateY(-8px)';
+    setTimeout(() => {
+      diffCard.remove();
+      showToast('Proposta descartada. Metas mantidas em 2.350 kcal.', false);
+    }, 300);
+  });
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.5)]" data-active-classes="text-primary"><div class="flex items-center justify-between max-w-md mx-auto h-20 px-space-xs pb-[env(safe-area-inset-bottom,0px)]"><a class="flex-1 flex flex-col items-center justify-center h-full min-w-[44px] min-h-[44px] text-on-surface-variant transition-colors hover:text-on-surface" data-path="hoje" href="#"><span class="material-symbols-outlined text-[24px]">local_fire_department</span><span class="text-label-xs font-label-xs mt-space-xs">Hoje</span></a><a aria-current="page" class="flex-1 flex flex-col items-center justify-center h-full min-w-[44px] min-h-[44px] transition-colors text-primary" data-path="planos" href="#"><span class="material-symbols-outlined text-[24px]">fitness_center</span><span class="text-label-xs font-label-xs mt-space-xs">Planos</span></a><a class="flex-1 flex flex-col items-center justify-center h-full min-w-[44px] min-h-[44px] text-on-surface-variant transition-colors hover:text-on-surface relative" data-path="chat" href="#"><div class="relative flex items-center justify-center"><span class="material-symbols-outlined text-[24px]">chat_bubble</span><span class="material-symbols-outlined text-[12px] absolute -top-1 -right-2 text-primary">auto_awesome</span></div><span class="text-label-xs font-label-xs mt-space-xs">Chat</span></a><a class="flex-1 flex flex-col items-center justify-center h-full min-w-[44px] min-h-[44px] text-on-surface-variant transition-colors hover:text-on-surface" data-path="evolucao" href="#"><span class="material-symbols-outlined text-[24px]">trending_up</span><span class="text-label-xs font-label-xs mt-space-xs">Evolução</span></a><a class="flex-1 flex flex-col items-center justify-center h-full min-w-[44px] min-h-[44px] text-on-surface-variant transition-colors hover:text-on-surface" data-path="perfil" href="#"><span class="material-symbols-outlined text-[24px]">manage_accounts</span><span class="text-label-xs font-label-xs mt-space-xs">Perfil</span></a></div></nav></body></html>
